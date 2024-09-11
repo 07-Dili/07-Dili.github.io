@@ -5,233 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume</title>
     <style>
-.leftstyle{
-    margin-left: 20%;
- }
- a{
-    color: #f5f5f5;
- }
-.details {
-    height: 30vh;
-    width: 100%;
-    background-color: rgb(113, 179, 184);
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 2%;
-
-}
-/* From Uiverse.io by vinodjangid07 */ 
-.Btn {
-  position: absolute;
-  width: 150px;
-  height: 55px;
-  border-radius: 45px;
-  border: none;
-  background-color: rgb(113, 179, 184);
-  color: white;
-  box-shadow: 0px 10px 10px rgb(113, 179, 184) inset,
-  0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px rgb(113, 179, 184) inset;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-*::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgb(113, 179, 184);
-	border-radius: 10px;
-	background-color: rgb(0, 0, 0);
-}
-
-*::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: rgb(242, 242, 242);
-}
-
-*::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: rgb(113, 179, 184);
-}
-.Btn::before {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgb(113, 179, 184);
-  content: "";
-  filter: blur(1px);
-  top: 7px;
-  border-radius: 50%;
-}
-
-.Btn::after {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgb(113, 179, 184);
-  content: "";
-  filter: blur(1px);
-  bottom: 7px;
-  border-radius: 50%;
-}
-
-.Btn:hover {
-  animation: jello-horizontal 0.9s both;
-}
-
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-
-.dub {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.links {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-}
-.buttonn{
-    display: flex;
-    justify-content: center;
-}
-
-        .details .pic{
-            margin-top: 10px;
-            height: 160px;
-            width: 160px; 
-            border-radius: 50%;
+        
+        *{
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
-        .skills{
+        
+
+       
+        body{
             display: flex;
-            justify-content: start;
+            flex-direction: column;
+            align-items: center;
         }
-        .one{
-            margin-left: 3%;
+        .details {
+            
+            height: 30vh;
+            width: 70%;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 1%;
+            
+        }
+
+        .image {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(234, 195, 147);
+        }
+        .line{
+            background-color: rgb(234, 195, 147);
+        }
+        .data {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+        }
+
+        .name {
+            text-align: center;
+            font-size: 80px;
+        }
+
+
+        .profession {
+            text-align: center;
+            font-size: xx-large;
+            font-family: monospace;
+            letter-spacing: 10px;
+        }
+
+        .pic {
+            height: 225px;
+            width: 230px;
+            border-radius: 15%;
+        }
+        .text{
+            width: 70%;
+            text-align: left;
+        }
+        .profiledata{
+            margin-top: 1%;
+            text-align: justify;
+            margin-right: 0%;
+            font-size: larger;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .topmar{
+            margin-top: 3%;
+        }
+        
+        .soft{
+            margin-top: 1%;
+            text-align: justify;
+            margin-left: 5%;
+            font-size: larger;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+        .leftthree{
+            margin-left: 5%;
+        }
+        .education{
+            margin-top: 3%;
+
+        }
+        .onemargin{
+            margin-top: 1%;
+        }
+        .normaltex{
+            font-size: larger;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .subhead{
+            font-size: large;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+            
+        }
+        .subsubtext{
+            margin-left: 8%;
+        }
+        .year{
+            font-size: medium;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+        }
+        a{
+            color: black;
+        }
+        .normal{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            text-transform: none;
+        }
+        .title{
+            color: burlywood;
+        }
+        .footer{
+            margin-top: 2%;
+            height: 3vh;
+            width: 100%;
+            background-color: burlywood;
         }
     </style>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="details">
-        <div class="dub">
-        <img src="mypic.jpg" alt="profile" class="pic">
-        <h2>DILIP KUMAR N</h2>
-        </div>  
-        <div class="links">
-            <a href="tel:8754363052">
-                <i class="fa-solid fa-phone ">: 8754363052</i>
-            </a>
-            <a href="mailto:dilipkumar.dk2610@gmail.com">
-                <i class="fa-solid fa-envelope ">: dilipkumar.dk2610@gmail.com</i>
-            </a>
+
+        <div class="details">
+            <div class="image">
+                <img src="mypic.jpg" alt="profile" class="pic">
+            </div>
+            <div class="data">
+                <p class="name">DILIP KUMAR N</p>
+                <p class="profession">STUDENT</p>
+            </div>
         </div>
-    </div>
-    <div class="leftstyle">
-    <h1 >Skills</h1>
-    <div class="skills">
-        <div class="hard one">
-            <h2 class="hardskill">Hard Skills</h2>
-            <ul>
-                <li>JAVA</li>
-                <li>C</li>
-                <li>ANDROID STUDIO</li>
-                <li>FLUTTER</li>
-                <li>MERNSTACK</li>
-            </ul>
+        <div class="text">
+            <div class="profile topmar">
+                <h1 class="title "> PROFILE</h2>
+                    <hr class="line">
+                    <div class="profiledata">
+                        <p>
+                            I am a motivated and passionate student with a strong foundation in software development, 
+                            programming, and problem-solving.I am eager to apply my knowledge in real-world scenarios and gain industry 
+                            experience through internships 
+                            or project collaborations. My goals include continuing to expand my technical skills and contribute to 
+                            innovative software solutions in a dynamic team environment.
+                        </p>
+                        
+                    </div>
+                    <div class="skills topmar">
+                        <h1 class="title"> SKILLS</h2>
+                            <hr class="line">
+                        <div class="soft">
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Design Thinking</li>
+                                <li>Problem Solving</li>
+                                <li>Android Studio & Flutter</li>
+                                <li>Mernstack</li>
+                                <li>JAVA</li>
+                                <li>C</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="education">
+                        <h1 class="title"> EDUCATION</h2>
+                            <hr class="line">
+                            <div class="school education">
+                                    <p class="leftthree subhead">SECONDARY HIGH SCHOOL</p>
+                                        <div class="sc normaltex subsubtext">
+                                            <p >Government Higher Secondary School,Hosur</p>
+                                            <p class="year">2020-2022</p>
+                                        </div>
+                                    <p class="leftthree subhead onemargin">BACHELOR OF TECHNOLOGY</p>
+                                    <div class="col normaltex subsubtext">
+                                        <p >Sri Shakthi Institute Of Engineering And Technology,Coimbatore </p>
+                                        <p class="year">2022-2026</p>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="contact education">
+                        <h1 class="title"> CONTACT</h2>
+                            <hr class="line">
+                            <div class="education leftthree">
+
+                                <a href="https://07-dili.github.io/">
+                                    
+                                    <p class="fa-brands fa-github normal onemargin ">    :  https://07-dili.github.io/</p>
+                                </a>
+                                <a href="mailto:dilipkumar.dk2610@gmail.com">
+                                    
+                                    <p class="fa-regular fa-envelope normal onemargin "> :  dilipkumar.dk2610@gmail.com</p>
+                                </a>
+                                <a href="tel:+91 8754363052">
+                                    
+                                    <p class="fa-regular fa-phone normal onemargin">    :  +91 8754363052</p>
+                                    
+                                </a>
+                            </div>
+                    </div>
+                    <div class="footer">
+
+                    </div>
+            </div>
         </div>
-        <div class="soft one">
-            <h2 class="softskill">Soft Skills</h2>
-            <ul>
-                <li>Time Management</li>
-                <li>Willingness to learn</li>
-                <li>Communication</li>
-                <li>Team Work</li>
-                <li>Open Mindness</li>
-            </ul>
-        </div>
-    </div>
     
 
-    <div class="work">
-        <h1>Work Experience</h1>
-        <div class="one">
-        <h3>High School Student Sales Trainee Program</h3>
-        <ul>
-            <li>Awarded the trainee of the year</li>
-            <li>Completed 6th level in college portal</li>
-        </ul>
-        <h3>Student Helper</h3>
-        <ul>
-            <li>response for 200+ merchandises promotions</li>
-            <li>Increase magazines sales by 30%</li>
-        </ul>
-        </div>
-    </div>
-    <div class="work">
-        <h1>Work Experience</h1>
-        <div class="one">
-        <h3>High School Student Sales Trainee Program</h3>
-        <ul>
-            <li>Awarded the trainee of the year</li>
-            <li>Completed 6th level in college portal</li>
-        </ul>
-        <h3>Student Helper</h3>
-        <ul>
-            <li>response for 200+ merchandises promotions</li>
-            <li>Increase magazines sales by 30%</li>
-        </ul>
-        </div>
-    </div>
-    
-    
-    
-    </div>
-    <div class="buttonn">
-
-        <button class="Btn">
-            THE END
-          </button>
-    </div>
 </body>
 </html>
